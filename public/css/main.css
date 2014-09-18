@@ -1,0 +1,284 @@
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower);
+
+* {
+    outline: 0;
+}
+
+html {
+    font-size: 14px
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 640px;
+}
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.background {
+    background: #fff url('./images/car-back.png') bottom left no-repeat;
+}
+
+.main-back-img {
+    width: 1280px;
+    height: 688px;
+    position: fixed;
+    top: 50%;
+    margin-top: -344px;
+    left: 50%;
+    margin-left: -640px;
+}
+
+.container {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.main-view-wrapper {
+    opacity: 0;
+}
+
+.edit-controls {
+    display: none;
+}
+
+.form-horizontal > fieldset {
+    display: table;
+    width: 100%;
+}
+
+.text-right {
+    text-align: right;
+}
+
+#all-filter-link {
+    display: none;
+}
+
+#carPhoto,
+.thumb {
+    max-width: 100%;
+    max-height: 300px;
+    height: auto;
+}
+
+.car-crud-wrapper .theme {
+    height: 530px;
+    overflow: hidden;
+}
+
+#photo {
+    color: transparent;
+}
+
+.form-horizontal .form-column {
+    display: table-cell;
+    width: 50%;
+    float: left;
+    padding: 0 15px
+}
+
+option,
+select {
+    color: #000;
+}
+
+button[disabled=disabled],
+button:disabled,
+select[disabled=disabled],
+select:disabled {
+    opacity: 0.5;
+}
+
+.carView,
+.carView label {
+    cursor: pointer;
+}
+
+/*---Clearfix---*/
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+/* ###### White / Blue #########*/
+.theme {
+    margin-left:auto;
+    margin-right:auto;
+    background: #FFF;
+    padding: 30px 30px 20px 30px;
+    box-shadow: rgba(187, 187, 187, 1) 0 0px 20px -1px;
+    -webkit-box-shadow: rgba(187, 187, 187, 1) 0 0px 20px -1px;
+    font: 16px "Indie Flower", Arial, Helvetica, sans-serif;
+    color: #666;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+.theme small {
+    color: #c7c7c7;
+}
+.theme a {
+    font-size: 18px;
+    color: #ed6f06;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.theme h1 {
+    font-size: 27px;
+    border-bottom: 1px solid #F5F5F5;
+}
+.theme h2 {
+    font-size: 22px;
+    margin-top: 15px ;
+}
+.theme h1,
+.theme h2 {
+    font-family: "Indie Flower", Arial, Helvetica, sans-serif;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    margin: -10px -30px 10px -30px;
+    color: #969696;
+}
+.theme h1>span {
+    display: block;
+    font-size: 13px;
+    color: #C4C2C2;
+}
+.theme label.control-label {
+    margin: 0px;
+    text-align: left;
+}
+.theme label>span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    color: #969696;
+}
+.theme .form-controls {
+    margin-top: 20px;
+}
+.theme input[type="text"],
+.theme input[type="password"],
+.theme input[type="email"],
+.theme input[type="file"],
+.theme textarea,
+.theme select{
+    color: #555;
+    padding: 3px 0px 3px 5px;
+    margin-top: 2px;
+    margin-bottom: 6px;
+    border: 1px solid #e5e5e5;
+    background: #fbfbfb;
+    height: 25px;
+    line-height:15px;
+    outline: 0;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+    box-shadow: inset 1px 1px 2px rgba(200,200,200,0.2);
+}
+.theme *[validation="not-valid"] {
+    outline: 1px solid rgb(255, 182, 182)!important;
+}
+.theme input.input-small {
+    width: 50%;
+}
+.theme input.input-xlarge {
+    width: 100%;
+}
+.theme input[type="file"] {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: none;
+    padding: 0;
+}
+.theme .thumb {
+    border: 5px solid #e5e5e5;
+}
+.theme .btn {
+    padding: 1px 6px
+}
+.theme textarea{
+    height:100px;
+    padding: 5px 0px 0px 5px;
+    width: 70%;
+    min-width: 150px;
+}
+.theme .button {
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f2f2f2), color-stop(1, #B9B9BA) );
+    background: -moz-linear-gradient( center top, #f2f2f2 5%, #B9B9BA 100% );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2f2', endColorstr='#B9B9BA');
+    background-color: #E2E8ED;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-border-radius: 9px;
+    display: inline-block;
+    color: #666;
+    font-family:"Indie Flower";
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    height: 35px;
+    line-height: 30px;
+    width: 80px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    outline: none;
+}
+.theme .button:hover:not([disabled]) {
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #B9B9BA), color-stop(1, #f2f2f2) );
+    background: -moz-linear-gradient( center top, #B9B9BA 5%, #f2f2f2 100% );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B9B9BA', endColorstr='#f2f2f2');
+    background-color: #efae8b;
+}
+.theme .button:active {
+    position: relative;
+    top: 1px;
+}
+.theme button {
+    margin-left: 12px;
+}
+.theme select {
+    background: url('./images/down-arrow.png') no-repeat right, -moz-linear-gradient(top, #FBFBFB 0%, #E9E9E9 100%);
+    background: url('./images/down-arrow.png') no-repeat right, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FBFBFB), color-stop(100%,#E9E9E9));
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 100%;
+    min-width: 150px;
+    line-height: 15px;
+    height: 30px;
+}
+.theme .thumbWrapper .destroy {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.theme .destroy:hover {
+    color: rgb(255, 182, 182);
+}
+.theme .thumbWrapper {
+    position: relative;
+    height: 100%;
+    display: inline-block;
+}

@@ -1,0 +1,69 @@
+<div class="container car-crud-wrapper">
+	<div class="theme">
+		<form class="form-horizontal">
+			<fieldset>
+				<legend>Car Information</legend>
+				<div class="form-column column-left">
+					<div class="control-group">
+						<label class="control-label" for="manufacturer">Select Manufacturer&nbsp<small>(required)</small></label>
+						<div class="controls">
+							<select id="manufacturer" name="manufacturer" class="input-xlarge modelPropertyInput" data-modelName="manufacturer">
+								<option value=''></option>
+							</select>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="modelOfCar">Select Model&nbsp<small>(required)</small></label>
+						<div class="controls">
+							<select id="modelOfCar" name="modelOfCar" class="input-xlarge modelPropertyInput" disabled="disabled" data-modelName="modelOfCar">
+								<option value=''></option>
+							</select>
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="dateOfManufacture">Date Of Manufacture</label>
+						<div class="controls">
+							<input id="dateOfManufacture" name="dateOfManufacture" class="datepicker modelPropertyBlur" type="text" class="input-xlarge" data-modelName="dateOfManufacture">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="inStock">In Stock</label>
+						<div class="controls">
+							<input type="checkBox" name="inStock" id="inStock" checked="checked" class="modelPropertyChange" data-modelName="inStock">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label" for="licensePlate">License Plate&nbsp<small>(required)</small></label>
+						<div class="controls">
+							<input id="licensePlate" name="licensePlate" type="text" class="input-xlarge modelPropertyInput" data-modelName="licensePlate">
+						</div>
+					</div>
+					<div class="control-group">
+						<label class="control-label">Geo Location&nbsp<small>(required)</small></label>
+						<div class="controls">
+							<input id="geoLocationLat" placeholder="Latitude" name="geoLocationLat" type="text" class="input-small pull-left modelPropertyInput text-right" data-modelName="geoLocationLat">
+							<input id="geoLocationLong" placeholder="Longitute" name="geoLocationLong" type="text" class="input-small pull-left modelPropertyInput text-right" data-modelName="geoLocationLong">
+						</div>
+					</div>
+				</div>
+				<div class="form-column column-right">
+					<div class="control-group">
+						<label class="control-label" for="photo">Photo</label>
+						<div class="controls">
+							<input type="file" accept="image/gif, image/jpeg" id="photo" name="file" class="modelPropertyChange" data-modelName="photo" />
+							<output id="carPhoto"></output>
+						</div>
+					</div>
+					<div class="insert-controls form-controls">
+						<button class="button pull-right" id="addButton" disabled>Add</button>
+						<button class="button pull-right" id="clearButton">Clear</button>
+					</div>
+					<div class="edit-controls form-controls">
+						<button class="button pull-right" id="saveButton" disabled>Save</button>
+						<button class="button pull-right" id="cancelButton">Cancel</button>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</div>

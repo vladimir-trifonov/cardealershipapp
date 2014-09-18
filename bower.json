@@ -1,0 +1,29 @@
+{
+  "name": "Car Dealership App",
+  "version": "0.0.1",
+  "description": "Car Dealership App",
+  "authors": [
+    "Vladimir Trifonov"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "requirejs": "~2.1.15",
+    "lodash": "~2.4.1",
+    "lodash-template-loader": "~0.1.6",
+    "modernizr": "~2.8.3",
+    "backbone": "~1.1.2",
+    "underscore": "~1.7.0",
+    "backbone.localstorage": "~1.1.13",
+    "jquery-ui": "~1.11.1",
+    "requirejs-plugins": "~1.0.2"
+  }
+}
